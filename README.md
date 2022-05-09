@@ -138,3 +138,7 @@ class ArcMarginProduct(nn.Module):
 
   + [官方数据集](https://www.kaggle.com/competitions/happy-whale-and-dolphin/data)
   + datasets文件夹
+
+## 写在后面
+
+感谢我的队友徐哥和他的3090们🤣
