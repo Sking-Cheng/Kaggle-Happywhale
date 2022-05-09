@@ -1,4 +1,4 @@
-# Kaggle-Happywhale-
+# Kaggle-Happywhale
 Happywhale - Whale and Dolphin Identification Silver🥈 Solution (26/1588)
 ## 竞赛方案思路
 
