@@ -106,7 +106,7 @@ class ArcMarginProduct(nn.Module):
         if self.ls_eps > 0:
             one_hot = (1 - self.ls_eps) * one_hot + self.ls_eps / self.out_features
         # -------------torch.where(out_i = {x_i if condition_i else y_i) ------------
-        output = (one_hot * phi) + ((1.0 - one_hot) * cosine) #验证是否匹配正确 
+        output = (one_hot * phi) + ((1.0 - one_hot) * cosine)  
         output *= self.s
 
         return output
@@ -118,7 +118,7 @@ class ArcMarginProduct(nn.Module):
 
 1. 使用Yolov5切分 fullbody数据 和 backfins数据；
 2. 使用小模型tf_efficientnet_b0_ns + ArcFace 作为 Baseline，训练fullbody 512size, 使用kNN 搜寻，搭建初步的pipline，Public LB : 0.729；
-3. 加入new_individual后处理，Public LB : 742；
+3. 加入new_individual后处理，Public LB : 0.742；
 4. 使用fullbody 768size图像，并调整了数据增强， Public LB : 0.770；
 5. 训练 tf_efficientnet_b6_ns ，以及上述所有功能微调，Public LB：0.832；
 6. 训练 tf_efficientnetv2_l_in21k，以及上述所有功能微调，Public LB：0.843；
