@@ -117,7 +117,7 @@ class ArcMarginProduct(nn.Module):
 ## 冲榜历程
 
 1. 使用Yolov5切分 fullbody数据 和 backfins数据；
-2. 使用小模型tf_efficientnet_b0_ns + ArcFace 作为 Baseline，训练fullbody 512size, 使用kNN 搜寻，搭建初步的pipline，Public LB : 0.729；
+2. 使用小模型tf_efficientnet_b0_ns + ArcFace 作为 Baseline，训练fullbody 512size, 使用kNN 搜寻，搭建初步的pipeline，Public LB : 0.729；
 3. 加入new_individual后处理，Public LB : 0.742；
 4. 使用fullbody 768size图像，并调整了数据增强， Public LB : 0.770；
 5. 训练 tf_efficientnet_b6_ns ，以及上述所有功能微调，Public LB：0.832；
